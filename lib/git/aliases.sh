@@ -97,7 +97,7 @@ if [ "$git_setup_aliases" = "yes" ]; then
   __git_alias "$git_diff_cached_alias" "git" "diff" "--cached"
   __git_alias "$git_add_patch_alias"   "git" "add" "-p"
   # Custom default format for git log
-  git_log_command="log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+  git_log_command="log"
   __git_alias "$git_log_alias" "git" "$git_log_command"
 
   # Standard commands
